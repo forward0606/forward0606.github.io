@@ -3,18 +3,44 @@
 
 <head>
     <meta charset="utf-8">
-
+    <link rel="stylesheet" href="style.css">
     <title>pomodoro</title>
+    <style>
+        main {
+            float: left;
+            width: 50%;
+            margin: 1%;
+            /* background: aquamarine; */
+        }
+
+        aside {
+            float: left;
+            width: 27.5%;
+            height: 1px;
+            margin: 1%;
+            /* background: aquamarine; */
+        }
+    </style>
 </head>
 
 <body>
-    <h1>try to get the time now!</h1>
-    <div id="time">
-        <p style="font-size: large;">25</p>
-    </div>
-    <div id="start_stop" style="background-color: aquamarine;">START
-        <script src="buttom.js">
-        </script>
+    <h1 style="text-align: center;color: aliceblue;font-size: 50px;">pomodoro</h1>
+    <div class="container">
+        <aside></aside>
+        <main>
+            <div class="timer">
+                <div id="time">
+                    <span id="minute"> 05 </span>
+                    :
+                    <span id="second">00</span>
+                </div>
+                <div id="start_stop">START
+                    <script src="buttom.js">
+                    </script>
+                </div>
+            </div>
+        </main>
+        <aside style="float: right;"></aside>
     </div>
 </body>
 
