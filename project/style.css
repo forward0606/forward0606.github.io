@@ -1,0 +1,49 @@
+body {
+    background-color: black;
+}
+
+.container {
+    height: 600;
+    width: 600;
+    background-color: blueviolet;
+}
+
+.main {
+    height: 400;
+    width: 25%;
+    background-color: black;
+}
+
+.timer {
+    width: 300px;
+    height: 300px;
+    /* border-radius: 50%; */
+    /* background: blanchedalmond; */
+    background-image: url("timer.png");
+    background-size: contain;
+    /* box-shadow: inset 0px 0px 114px rgba(0, 0, 0, 0.45); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 8rem;
+    place-items: center;
+}
+
+#start_stop {
+    width: 100;
+    height: 100;
+    top: 50%;
+    left: 50%;
+    place-items: center;
+    background-color: rgb(32, 218, 122);
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    text-align: center;
+    font-size: 50px;
+}
+
+#time {
+    font-size: 50px;
+}
