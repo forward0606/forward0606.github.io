@@ -7,8 +7,11 @@
     <title>pomodoro</title>
     <style>
         main {
-            float: left;
-            width: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
             margin: 1%;
             /* background: aquamarine; */
         }
@@ -26,13 +29,13 @@
 <body>
     <h1 style="text-align: center;color: aliceblue;font-size: 50px;">pomodoro</h1>
     <div class="container">
-        <aside></aside>
+        <!-- <aside></aside> -->
         <main>
             <div class="timer">
                 <div id="time">
-                    <span id="minute"> 00 </span>
+                    <span id="minute"> 05 </span>
                     :
-                    <span id="second">10</span>
+                    <span id="second">00</span>
                 </div>
                 <div id="start_stop">START
                     <script src="buttom.js">
@@ -40,7 +43,7 @@
                 </div>
             </div>
         </main>
-        <aside style="float: right;"></aside>
+        <!-- <aside style="float: right;"></aside> -->
     </div>
 </body>
 
