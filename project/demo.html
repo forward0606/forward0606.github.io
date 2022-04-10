@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>pomodoro</title>
+    <style>
+        main {
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: 1%;
+            margin-top:3%
+            /* background: aquamarine; */
+        }
+
+        aside {
+            float: left;
+            width: 27.5%;
+            height: 1px;
+            margin: 1%;
+            /* background: aquamarine; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;color: aliceblue;font-size: 50px;">pomodoro</h1>
+    <div class="container">
+        <!-- <aside></aside> -->
+        <main>
+            <div class="timer">
+                <div id="time">
+                    <span id="minute"> 05 </span>
+                    :
+                    <span id="second">00</span>
+                </div>
+                <div id="start_stop">START
+                    <script src="buttom.js">
+                    </script>
+                </div>
+            </div>
+        </main>
+        <!-- <aside style="float: right;"></aside> -->
+    </div>
+</body>
+
+</html>
