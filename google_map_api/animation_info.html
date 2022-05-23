@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>資訊框</title>
+    <style>
+        #map {
+            width: 900px;
+            height: 750px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+
+    <script type="text/javascript">
+        function initMap() {
+            const location = { lat: 22.99731635304519, lng: 120.21251401228294 };
+
+            //display map
+            const map = new google.maps.Map(
+                document.getElementById("map"), {
+                center: location,
+                zoom: 17
+            }
+            );
+            //marker
+            const marker = new google.maps.Marker({
+                position: location,
+                map: map,// use map
+                title: '台南火車站',
+                animation: google.maps.Animation.BOUNCE // 彈跳特效
+            });
+            //infowindow
+            var infowindow = new google.maps.InfoWindow({
+                content: '台南火車站<hr>是搭火車的地方呦', //可以用html語言
+                minWidth: 500,//最小寬度
+            });
+            // 監聽事件
+            marker.addListener('click', function () {//點選 marker 打開資訊視窗事件
+                infowindow.open(map, marker);
+            });
+        }
+        window.initMap = initMap;
+
+
+
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLM8UnSHpFjzusSDJRugQHJqZVhGJoCFs&callback=initMap"></script>
+</body>
+
+</html>
