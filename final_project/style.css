@@ -1,0 +1,99 @@
+body {
+    background-color: bisque;
+}
+
+.gg {
+    float: left;
+    width: 30%;
+    margin-left: 2%;
+    height: 200;
+    color: white;
+    /*background-color: bisque; */
+}
+
+/* .main {
+    height: 400;
+    width: 25%;
+    background-color: black;
+} */
+
+.timer {
+    width: 35%;
+    height: 100px;
+    float: left;
+    margin-top: 2%;
+    /* border-radius: 50%; */
+    /* background: blanchedalmond; */
+    /* background-image: url("timer.png"); */
+    background-size: contain;
+    /* box-shadow: inset 0px 0px 114px rgba(0, 0, 0, 0.45); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 8rem;
+    place-items: center;
+}
+
+/*
+ #start_stop {
+    width: 100;
+    height: 100;
+    top: 50%;
+    left: 50%;
+    place-items: center;
+    background-color: rgb(32, 218, 122);
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    text-align: center;
+    font-size: 50px;
+}
+
+#add10min,
+#add1min,
+#add10sec,
+#add1sec,
+#dec10min,
+#dec1min,
+#dec10sec,
+#dec1sec {
+    width: 100;
+    height: 100;
+    top: 50%;
+    left: 50%;
+    place-items: center;
+    background-color: rgb(32, 218, 122);
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    text-align: center;
+    font-size: 25px;
+}
+*/
+
+
+#time {
+    /* justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    place-items: center;  */
+    margin: 1%;
+    width: 98%;
+    font-size: 50px;
+
+}
+
+.left_half {
+    float: left;
+    /* background-color: bisque; */
+    width: 40%;
+    margin-left: 5%;
+}
+
+.full {
+    float: left;
+    /* background-color: bisque; */
+    margin: 1%;
+    width: 98%;
+}
